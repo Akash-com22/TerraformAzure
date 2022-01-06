@@ -12,12 +12,6 @@ terraform {
 provider "azurerm" {
   features {}
 }
-
-# Create a resource group
-resource "azurerm_resource_group" "resource_rg" {
-  name     = "RG-Container"
-  location = "East US"
-}
 resource "azurerm_virtual_network" "main" {
   name                = "virtual-network"
   address_space       = ["10.0.0.0/16"]
