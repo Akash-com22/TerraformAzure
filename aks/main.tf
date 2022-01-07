@@ -1,7 +1,3 @@
-terraform {
-  backend "azure" {}
-}
-
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
   features {}
