@@ -1,6 +1,7 @@
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
+  version = "=2.20.0"
   features {}
 }
 resource "azurerm_virtual_network" "main" {
